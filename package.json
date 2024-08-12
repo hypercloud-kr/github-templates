@@ -1,6 +1,6 @@
 {
   "name": "@hypercloud-kr/github-templates",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
