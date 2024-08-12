@@ -1,5 +1,5 @@
 {
-  "name": "github-templates",
+  "name": "@hypercloud-kr/github-templates",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
