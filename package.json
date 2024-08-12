@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc --noEmit --incremental && node esbuild.cjs",
+    "build": "tsc",
     "build:dev": "node esbuild.cjs",
     "dev": "yarn build & node dist/index.js"
   },

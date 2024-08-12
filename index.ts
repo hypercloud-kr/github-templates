@@ -19,7 +19,7 @@ const copyDirectoryRecursive = async (sourceDir: string, targetDir: string) => {
 };
 
 const copyTemplateFiles = async (templateType: string, targetDir: string) => {
-	const templateDir = path.join(__dirname, 'templates', templateType);
+	const templateDir = path.join(__dirname, '../templates', templateType);
 	const githubDir = path.join(targetDir, '.github');
 	console.log(templateDir, githubDir);
 	await fs.mkdir(githubDir, { recursive: true });
@@ -30,7 +30,7 @@ const run = async () => {
 	const args = process.argv.slice(2);
 
 	if (args.length === 0) {
-		console.error('사용법: npx setting-repository frontend|backend|webxr');
+		console.error('사용법: npx hc-github-templates frontend|backend|webxr');
 		process.exit(1);
 	}
 

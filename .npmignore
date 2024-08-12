@@ -14,5 +14,4 @@
 !dist/**/*.d.cts
 !dist/**/*.d.mts
 !dist/**/*.css
-
-scripts/
+!templates/**/*
