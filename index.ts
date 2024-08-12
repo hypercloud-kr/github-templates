@@ -38,6 +38,7 @@ const run = async () => {
 	const targetDir = process.cwd();
 
 	try {
+		await copyTemplateFiles('shared', targetDir);
 		await copyTemplateFiles(templateType, targetDir);
 	} catch (err) {
 		console.error('오류가 발생했습니다:', err);
