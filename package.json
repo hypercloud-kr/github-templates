@@ -1,6 +1,23 @@
 {
-  "name": "templates",
+  "name": "github-templates",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --noEmit --incremental && node esbuild.cjs",
+    "build:dev": "node esbuild.cjs",
+    "dev": "yarn build & node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "esbuild": "^0.23.0",
+    "fs": "^0.0.1-security",
+    "glob": "^11.0.0",
+    "path": "^0.12.7",
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.4"
+  },
+  "bin": {
+    "github-templates": "dist/index.js"
+  }
 }
