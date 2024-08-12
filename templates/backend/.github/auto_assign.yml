@@ -6,7 +6,7 @@ addAssignees: author
 
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
-  - hypercloud-kr/web-backend
+  - hypercloud-kr/backend
   - robin-jang
   - qurugi0347
   - bhoon92
