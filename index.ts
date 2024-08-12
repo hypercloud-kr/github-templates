@@ -20,7 +20,7 @@ const copyDirectoryRecursive = async (sourceDir: string, targetDir: string) => {
 
 const copyTemplateFiles = async (templateType: string, targetDir: string) => {
 	const templateDir = path.join(__dirname, '../templates', templateType);
-	const githubDir = path.join(targetDir, '.github');
+	const githubDir = path.join(targetDir, './');
 	console.log(templateDir, githubDir);
 	await fs.mkdir(githubDir, { recursive: true });
 	await copyDirectoryRecursive(templateDir, githubDir);
