@@ -17,10 +17,10 @@ jobs:
       - name: Checkout the current branch
         uses: actions/checkout@v4
 
-      - name: Use Node.js 20
+      - name: Use Node.js 18
         uses: actions/setup-node@v1
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
