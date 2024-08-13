@@ -6,7 +6,7 @@
 ## 사용법
 **NPMRC 설정**
 ```bash
-echo "//npm.pkg.github.com/:_authToken=${PACKAGE_TOKEN}" > .npmrc
+echo "//npm.pkg.github.com/:_authToken=\${PACKAGE_TOKEN}" > .npmrc
 echo "@hypercloud-kr:registry=https://npm.pkg.github.com/" >> .npmrc
 echo "always-auth=true" >> .npmrc
 ```
